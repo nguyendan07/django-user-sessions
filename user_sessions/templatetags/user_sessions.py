@@ -9,7 +9,15 @@ register = template.Library()
 
 BROWSERS = (
     (re.compile('Edge'), _('Edge')),
+    (re.compile('Edg'), _('Edge')),
+    (re.compile('EdgiOS'), _('Edge')),
+    (re.compile('EdgA'), _('Edge')),
+    (re.compile('Vivaldi'), _('Vivaldi')),
+    (re.compile('Chromium'), _('Chromium')),
+    (re.compile('Brave'), _('Brave')),
+    (re.compile('SamsungBrowser'), _('Samsung Browser')),
     (re.compile('Chrome'), _('Chrome')),
+    (re.compile('CriOS'), _('Chrome')),
     (re.compile('Safari'), _('Safari')),
     (re.compile('Firefox'), _('Firefox')),
     (re.compile('Opera'), _('Opera')),
@@ -26,6 +34,8 @@ DEVICES = (
     (re.compile('Mac OS X 10[._]11'), _('OS X El Capitan')),
     (re.compile('Mac OS X 10[._]12'), _('macOS Sierra')),
     (re.compile('Mac OS X 10[._]13'), _('macOS High Sierra')),
+    (re.compile('Mac OS X 10[._]14'), _('macOS Mojave')),
+    (re.compile('Mac OS X 10[._]15'), _('macOS Catalina')),
     (re.compile('Mac OS X'), _('OS X')),
     (re.compile('NT 5.1'), _('Windows XP')),
     (re.compile('NT 6.0'), _('Windows Vista')),
@@ -34,6 +44,7 @@ DEVICES = (
     (re.compile('NT 6.3'), _('Windows 8.1')),
     (re.compile('NT 10.0'), _('Windows 10')),
     (re.compile('Windows'), _('Windows')),
+    (re.compile('CrOS'), _('Chrome OS')),
 )
 
 
