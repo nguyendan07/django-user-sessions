@@ -8,14 +8,15 @@ from django.utils.translation import ugettext_lazy as _
 register = template.Library()
 
 BROWSERS = (
-    (re.compile('Edge'), _('Edge')),
-    (re.compile('Edg'), _('Edge')),
-    (re.compile('EdgiOS'), _('Edge')),
-    (re.compile('EdgA'), _('Edge')),
+    (re.compile('Edge'), _('Microsoft Edge')),
+    (re.compile('Edg'), _('Microsoft Edge')),
+    (re.compile('EdgiOS'), _('Microsoft Edge')),
+    (re.compile('EdgA'), _('Microsoft Edge')),
     (re.compile('Vivaldi'), _('Vivaldi')),
     (re.compile('Chromium'), _('Chromium')),
     (re.compile('Brave'), _('Brave')),
     (re.compile('SamsungBrowser'), _('Samsung Browser')),
+    (re.compile('coc_coc_browser'), _('Coc Coc')),
     (re.compile('Chrome'), _('Chrome')),
     (re.compile('CriOS'), _('Chrome')),
     (re.compile('Safari'), _('Safari')),
